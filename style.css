@@ -1,0 +1,74 @@
+/* style.css */
+
+/* Configuração de cores e fontes */
+body {
+    background-color: white;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #006400;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.button.whatsapp, .button.instagram {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.button.whatsapp {
+    background-color: #25D366;
+}
+
+.button.instagram {
+    background-color: #C13584;
+}
