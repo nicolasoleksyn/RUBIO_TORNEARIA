@@ -1,28 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RUBIO TORNEARIA</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubio Tornearia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="imagens/logo.png" alt="Logo da Rubio Tornearia">
-        <h1>Bem-vindo à Rubio Tornearia</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Sobre Nós</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="precos.html">Preços</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="hero">
+    <div class="overlay">
+      <img src="imagens/logo.png.png" alt="Logo da Rubio Tornearia" class="logo">
+      <h1 class="header-title">Rubio Tornearia</h1>
+      <p class="header-subtitle">Excelência em tornearia e usinagem de precisão</p>
+      <a href="#contact" class="cta-button">Entre em Contato</a>
+    </div>
+  </header>
 
-    <section class="about">
-        <h2>Sobre Nós</h2>
-        <p>Rubio Tornearia é uma empresa especializada em serviços de tornearia mecânica de alta precisão, atendendo com excelência e qualidade. Nossa missão é oferecer soluções personalizadas para cada cliente.</p>
-    </section>
+  <nav>
+    <ul>
+      <li><a href="#about">Sobre Nós</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="fade-in">
+    <h2>Sobre Nós</h2>
+    <p>Bem-vindo à Rubio Tornearia! Somos uma empresa especializada em tornearia mecânica de precisão, oferecendo serviços de alta qualidade para nossos clientes.</p>
+  </section>
+
+  <section id="services" class="fade-in">
+    <h2>Serviços</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Tornearia Convencional</h3>
+        <p>Serviço especializado para peças precisas e de alta durabilidade.</p>
+      </div>
+      <div class="card">
+        <h3>Usinagem CNC</h3>
+        <p>Usinagem automatizada com precisão em alta escala.</p>
+      </div>
+      <div class="card">
+        <h3>Soldagem e Fabricação</h3>
+        <p>Soldagem e fabricação de peças para diversas indústrias.</p>
+      </div>
+      <div class="card">
+        <h3>Manutenção de Máquinas</h3>
+        <p>Manutenção completa e preventiva para máquinas e equipamentos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contato</h2>
+    <p>Entre em contato conosco pelos canais abaixo:</p>
+    <div class="social-buttons">
+      <a href="https://wa.me/43996937606" target="_blank" class="whatsapp-button">WhatsApp</a>
+      <a href="https://instagram.com/nicolasoleksyn_7" target="_blank" class="instagram-button">Instagram</a>
+      <a href="mailto:rubiotornearia@gmail.com" class="email-button">E-mail</a>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 RUBIO TORNEARIA. TODOS OS DIREITOS RESERVADOS</p>
+      <p>Email: rubiotornearia@gmail.com | Telefone: (43) 996937606</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

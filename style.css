@@ -1,74 +1,187 @@
-/* style.css */
-
-/* Configuração de cores e fontes */
-body {
-    background-color: white;
-    color: #333;
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #006400;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-header img {
-    width: 120px;
-    height: auto;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos básicos */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f0f0f0; /* Fundo claro */
+  }
+  
+  /* Hero Section com Gradiente e Opacidade */
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 77, 0, 0.7), rgba(0, 77, 0, 0.7)), url('banner.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .header-title {
+    font-size: 48px;
+    margin: 10px 0;
+  }
+  
+  .header-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    background-color: #25d366;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-}
-
-footer {
-    background-color: #006400;
-    color: white;
-    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cta-button:hover {
+    background-color: #1b9e4d;
+    transform: translateY(-5px);
+  }
+  
+  /* Navbar */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
     padding: 15px;
-}
-
-.button.whatsapp, .button.instagram {
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: #008000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav ul li a {
+    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
-    margin: 0 10px;
-}
-
-.button.whatsapp {
-    background-color: #25D366;
-}
-
-.button.instagram {
-    background-color: #C13584;
-}
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #d0ffd0;
+  }
+  
+  /* Seções */
+  section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  section h2 {
+    color: #004d00;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Cards de Serviço */
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card h3 {
+    color: #008000;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Botões Sociais */
+  .social-buttons a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .whatsapp-button {
+    background-color: #25d366;
+  }
+  
+  .instagram-button {
+    background-color: #e1306c;
+  }
+  
+  .email-button {
+    background-color: #0078d4; /* Azul para o botão de e-mail */
+  }
+  
+  .social-buttons a:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+  }
+  
+  /* Footer com Bordas e Sombras */
+  footer {
+    background-color: #004d00;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #25d366;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #d0ffd0;
+  }
+  
+  /* Logo Redimensionada */
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  /* Botão de Rolagem para o Topo */
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #25d366;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .scroll-top:hover {
+    opacity: 0.8;
+  }
